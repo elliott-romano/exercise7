@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>shhhhhhhhhhhhhhhhh</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <div id="textContainer">
+        <p id="loremText">
+            
+The Panama Papers, sourced from documents leaked from Mossack Fonseca, a Panamanian law firm, allege a widespread utilization of offshore entities by individuals and organizations globally for the purpose of concealing assets, engaging in tax evasion, and facilitating money laundering. The leaked documents expose the establishment and operation of numerous shell companies, trusts, and other financial structures, often within jurisdictions characterized by lenient regulatory oversight.
+
+The key allegations encompass instances of tax evasion, where offshore structures were allegedly employed to conceal income and assets, allowing individuals and entities to evade taxation within their respective jurisdictions. Additionally, the leaked documents suggest the facilitation of money laundering through certain offshore entities, which provided a veil of anonymity to those involved in illicit financial activities.
+
+The creation of numerous shell companies is a prominent aspect of the allegations. These entities were purportedly established to obscure the true ownership of assets, enabling individuals to maintain anonymity and avoid legal scrutiny. The implicated entities span multiple jurisdictions, pointing to the global reach of the alleged misconduct.
+
+The use of offshore entities, as detailed in the Panama Papers, raises legal and regulatory concerns. These concerns revolve around compliance with tax laws, anti-money laundering (AML) regulations, and other financial regulations in the affected jurisdictions. The revelations from the Panama Papers prompted investigations by authorities in various countries, resulting in legal actions, resignations, and heightened scrutiny of offshore financial practices on a global scale.
+        </p>
+    </div>
+
+    <div class="canvas-container">
+        <!-- p5.js canvas will be inserted here -->
+      </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const loremText = document.getElementById("loremText");
+    const words = loremText.textContent.split(" ");
+    
+    loremText.innerHTML = ""; // Clear the original text content
+
+    words.forEach(word => {
+        const span = document.createElement("span");
+        span.textContent = word + " "; // Add a space after each word
+        loremText.appendChild(span);
+    });
+});
+</script>
+
+</body>
+</html>
